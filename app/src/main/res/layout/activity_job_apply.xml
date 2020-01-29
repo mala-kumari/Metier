@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.metier.jobApply">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/red1"
+            android:text="Job Apply"
+            />
+        <EditText
+            android:id="@+id/nm"
+            android:drawableLeft="@drawable/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/contacts"
+            android:drawableLeft="@drawable/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact no."
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/dob"
+            android:drawableLeft="@drawable/cake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter date of birth"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/attach"
+            android:background="@color/blue2"
+            android:textColor="#fff"
+            android:visibility="visible"
+            android:text="Attach Resume"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/res_view"
+            android:visibility="gone"/>
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:onClick="apply"
+            android:background="@color/red1"
+            android:textColor="#fff"
+            android:text="Done"/>
+    </LinearLayout>
+
+</ScrollView>

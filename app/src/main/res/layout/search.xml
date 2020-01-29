@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style1"
+    tools:context=".Search"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH JOB's"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/red1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            style="@style/style2"
+            android:gravity="center"
+            android:background="@android:drawable/screen_background_light_transparent">
+
+            <Spinner
+                android:layout_marginTop="50dp"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog" />
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <Spinner
+                android:layout_marginTop="50dp"
+                android:id="@+id/spinner_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog" />
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+
+          <!--  <EditText
+                android:id="@+id/ed2"
+                style="@style/style3"
+                android:textSize="20sp"
+                android:hint="@string/req" />-->
+            <Button
+                android:onClick="search"
+                android:layout_marginTop="40dp"
+                android:background="@color/blue2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="search"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

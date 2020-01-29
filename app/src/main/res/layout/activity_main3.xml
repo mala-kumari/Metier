@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".Main1"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Avilable Jobs"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@color/blue2"
+                android:visibility="visible"/>
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="52dp"
+                android:onClick="change1"
+                android:background="@drawable/filter"
+                android:visibility="visible"
+                android:layout_gravity="right"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+                <ListView
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+
+
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/filter"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0-2 yrs"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0-2 yrs"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2-7 yrs"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7-12 yrs"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12+ yrs"
+                        android:textSize="15sp"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salary"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    />
+                <RadioGroup
+                    android:id="@+id/j_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.10000-15000"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:id="@+id/s2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.15000-35000"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:id="@+id/s3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.20000-30000"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="none"
+                        android:textSize="15sp"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FunctionArea"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <RadioGroup
+                    android:id="@+id/j_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android Application Developer"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:id="@+id/f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android Developer"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:id="@+id/f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="none"
+                        android:textSize="15sp"/>
+                </RadioGroup> <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center">
+                <Button
+                    android:text="Clear all"
+                    android:textSize="20dp"
+                    style="@style/style4"
+                    android:background="@color/blue2"
+                    android:textColor="#fff"
+                    android:layout_margin="20sp"
+                    />
+                <Button
+                    android:onClick="apply1"
+                    android:text="APPly"
+                    style="@style/style4"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="@color/red1"
+                    />
+            </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="5dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
